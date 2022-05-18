@@ -7,13 +7,16 @@ public class Pista{
     long stop;
     long totale;
     ArrayList<Cronometro>listaRisultati;    
+    Semaforo sem2;
 
-    public Pista(){
-
+    public Pista(Semaforo sem2){
+        this.sem2=sem2;
         listaRisultati=new ArrayList();
     }
 
     public void entraInPista(String nome){
+
+        sem2.P();
 
         Cronometro c;
 
@@ -32,6 +35,9 @@ public class Pista{
         c=new Cronometro(totale,nome);
 
         listaRisultati.add(c);
+
+
+        sem2.V();
 
         Collections.sort(listaRisultati);
         System.out.println(nome +" è uscito dalla pista");

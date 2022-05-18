@@ -7,16 +7,16 @@ public class App {
         Semaforo semaforo =new Semaforo(2);
         Semaforo sem2=new Semaforo(4);
 
-        Pista p=new Pista();
+        Pista p=new Pista(sem2);
 
-        Persona p1=new Persona("Paolo", semaforo, spogliatoio,p,sem2);
-        Persona p2=new Persona("Ciccio", semaforo, spogliatoio,p,sem2);
-        Persona p3=new Persona("Alessio", semaforo, spogliatoio,p,sem2);
-        Persona p4=new Persona("Alessandro", semaforo, spogliatoio, p,sem2);
-        Persona p5=new Persona("Tossa", semaforo, spogliatoio,p,sem2);
-        Persona p6=new Persona("Bomba", semaforo, spogliatoio,p,sem2);
-        Persona p7=new Persona("Mattia", semaforo, spogliatoio,p,sem2);
-        Persona p8=new Persona("Davide", semaforo, spogliatoio, p,sem2);
+        Persona p1=new Persona("Paolo", semaforo, spogliatoio,p);
+        Persona p2=new Persona("Ciccio", semaforo, spogliatoio,p);
+        Persona p3=new Persona("Alessio", semaforo, spogliatoio,p);
+        Persona p4=new Persona("Alessandro", semaforo, spogliatoio, p);
+        Persona p5=new Persona("Tossa", semaforo, spogliatoio,p);
+        Persona p6=new Persona("Bomba", semaforo, spogliatoio,p);
+        Persona p7=new Persona("Mattia", semaforo, spogliatoio,p);
+        Persona p8=new Persona("Davide", semaforo, spogliatoio, p);
         
         p1.start();
         p2.start();
